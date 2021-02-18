@@ -18,7 +18,7 @@ def check_and_clean(path):
     files = listdir(path)
 
     if '.DS_Store' in files:
-	files.remove('.DS_Store')
+        files.remove('.DS_Store')
     for file in files:
         if not isdir('/'.join([path, file])):
         	print('/'.join([path, file]))
